@@ -1,0 +1,6 @@
+<launch>
+  <!--my_pkg launch file  -->
+  <node pkg="my_pkg" type="simple.py" name="ObiWan"  output="screen">
+    <remap from="turtlebot_teleop_keyboard/cmd_vel" to="/cmd_vel"/>   <!-- cmd_vel_mux/input/teleop"/-->
+  </node>
+</launch>

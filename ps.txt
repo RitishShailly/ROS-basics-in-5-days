@@ -1,0 +1,11 @@
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+user         1  0.0  0.0   3980  2876 ?        Ss   03:01   0:00 /bin/bash -c sudo ln -sfv /opt/ros/noetic /opt/ros/latest; sleep infinity
+user         9  0.0  0.0   2512   520 ?        S    03:01   0:00 sleep infinity
+user       240  0.1  0.0   5816  4956 pts/1    Ss+  03:01   0:00 /bin/bash -c source /home/user/.bashrc;  export ROS_PACKAGE_PATH=/home/user/quiz_ws:$ROS_PACKAGE_PATH;  export ROS_HOSTNAME=1_quiz_correction;  export ROS_MASTER_URI=http://1_simulation:11311;  export DOCKER_HOST_IP_ADDRESS=172.31.44.181;  export SLOT_PREFIX=e49b9ed1-1bba-4044-abbb-591be4ea4846;  roslaunch tests_quizes services_quiz.launch --screen gui:=false  
+user       310  0.9  0.1 255144 29612 pts/1    Sl+  03:01   0:00 /usr/bin/python3 /opt/ros/noetic/bin/roslaunch tests_quizes services_quiz.launch --screen gui:=false
+user       318  0.1  0.0   5980  5192 ?        Ss   03:01   0:00 bash /home/user/quiz_ws/Quizes/tests_quizes/scripts/services_quiz.sh __name:=services_quiz_node __log:=/home/user/.ros/log/4a212710-fe66-11ec-985d-0242ac1d0007/services_quiz_node-1.log
+user       813  1.5  0.1 254888 29448 ?        Sl   03:01   0:00 /usr/bin/python3 /opt/ros/noetic/bin/roslaunch services_quiz start_bb8_move_custom_service_server.launch
+user       822 14.3  0.1 621388 27004 ?        Ssl  03:01   0:06 python /home/user/catkin_ws/src/services_quiz/scripts/bb8_move_custom_service_server.py __name:=move_bb8_in_square_custom_server __log:=/home/user/.ros/log/4a212710-fe66-11ec-985d-0242ac1d0007/move_bb8_in_square_custom_server-1.log
+user       831  2.1  0.1 254888 29472 ?        Sl   03:02   0:00 /usr/bin/python3 /opt/ros/noetic/bin/roslaunch services_quiz call_bb8_move_in_square_custom_service_server.launch
+user       840 10.5  0.1 473536 26344 ?        Ssl  03:02   0:03 python /home/user/catkin_ws/src/services_quiz/scripts/bb8_move_custom_service_client.py __name:=move_bb8_in_square_custom_client __log:=/home/user/.ros/log/4a212710-fe66-11ec-985d-0242ac1d0007/move_bb8_in_square_custom_client-1.log
+user       853  0.0  0.0   5904  2888 ?        R    03:02   0:00 ps aux

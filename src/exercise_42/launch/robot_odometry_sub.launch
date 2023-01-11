@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="exercise_42" type="robot_odometry_sub.py" name="odometry_subscriber" output="screen" />
+</launch>
